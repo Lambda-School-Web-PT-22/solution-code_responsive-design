@@ -175,11 +175,17 @@ nav a {
     align-items: center;
     width: 100%;
     margin-left: 3%;
+    text-align: center;
   }     
   
   .project {
       width: 25%;
 
+  }
+
+  .project img {
+      width: 200px;
+      border-radius: 10px;
   }
 
 #about {
@@ -198,8 +204,8 @@ nav a {
   /* Responsive Design */
 
 
-  /* Tablet of 600px*/
-  @media(max-width: 600px) {
+  /* Tablet of 800px*/
+  @media(max-width: 800px) {
       nav {
           flex-direction: column;
           margin-left: 0;
@@ -227,18 +233,18 @@ nav a {
           margin-bottom: 2%;
       }
   }
- /* Phone 480px */
-  @media(max-width: 480px) {
+ /* Phone 500px */
+  @media(max-width: 500px) {
     
     #projects{
         flex-wrap: wrap;
         justify-content: space-evenly;
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 
     .project {
-        
         width: 100%;
     }
 
