@@ -180,3 +180,79 @@ nav a {
 #contact {
   text-align: center;
 }
+
+/* media query start after main CSS */
+@media screen and (max-width: 800px) {
+  header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  header h1 {
+    text-align: center;
+    margin: 5%;
+  }
+
+  header nav {
+    margin: 0 auto;
+  }
+
+  nav a {
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-decoration: none;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-info button {
+    width: 25%;
+    margin: 10px auto;
+  }
+
+  #projects {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #contact {
+    margin: 5%;
+  }
+
+  #contact button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    width: 0%;
+    align-items: center;
+  }
+
+  .about-info p {
+    width: 40%;
+    margin: 20px auto;
+  }
+}
