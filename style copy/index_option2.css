@@ -197,6 +197,8 @@ nav a {
 
   /* Responsive Design */
 
+
+  /* Tablet of 600px*/
   @media(max-width: 600px) {
       nav {
           flex-direction: column;
@@ -213,7 +215,6 @@ nav a {
 
       #projects{
           width: 100%;
-          flex-direction: row;
           justify-content: space-evenly;
       }
 
@@ -224,5 +225,32 @@ nav a {
 
       #contact {
           margin-bottom: 2%;
+      }
+  }
+ /* Phone 480px */
+  @media(max-width: 480px) {
+    
+    #projects{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project {
+        
+        width: 100%;
+    }
+
+    .project img{
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    #contact {
+        text-align: center;
+        padding: 1% 0;
+        margin-bottom: 2%;
+        margin-top: 2%;
       }
   }
